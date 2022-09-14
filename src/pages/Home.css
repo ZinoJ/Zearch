@@ -1,0 +1,72 @@
+.home {
+   display: flex;
+   flex-direction: column;
+   /* height: 100vh; */
+   padding-bottom: 4rem;
+   /* background-color: rgba(245, 245, 245, 0.847); */
+   background-color: #F2F6FA;
+}
+
+.home__header {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 30px;
+   align-items: center;
+}
+
+.home__header a {
+   margin-right: 20px;
+   text-decoration: inherit;
+   /* color: rgba(0, 0, 0, 0.87); */
+   color: #031323;
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.home__header a:hover {
+   text-decoration: underline;
+}
+
+.home__headerRight {
+   display: flex;
+   align-items: center;
+   min-width: 13vw;
+   justify-content: space-between;
+}
+
+.home__headerRight > .svg {
+   margin-right: 20px;
+}
+
+.home__body {
+   /* flex: 1; */
+   display: flex;
+   flex-direction: column;
+   /* margin-top: 10%; */
+   align-items: center;
+}
+
+/* .zearch {
+   object-fit: contain;
+   font-size: 5rem;
+   font-weight: 500;
+   color: #031323;
+} */
+.zearch__container {
+   display: inline-block;
+}
+.zearch {
+   overflow: hidden;
+   white-space: nowrap;
+   animation: 
+   typing 1.8s steps(20, end) forwards;
+   font-size: 1.6rem;
+   width: 0;
+   font-size: 5rem;
+   font-weight: 500;
+   color: #031323;
+ }
+ @keyframes typing {
+   from { width: 0 }
+   to { width: 100% }
+ }

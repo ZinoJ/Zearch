@@ -1,0 +1,139 @@
+.searchPage__header {
+   /* display: flex; */
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   background-color: white;
+   align-items: center;
+   /* gap: 2rem; */
+   padding: 0 2rem 1rem;
+   border-bottom: 1px solid lightgray;
+}
+
+.searchPage__headerBody > .search > .search__input {
+   margin-top: 0;
+   /* width: unset; */
+   /* margin: unset; */
+   /* max-width: unset; */
+}
+
+.searchPage a {
+   text-decoration: inherit;
+   color: rgba(0, 0, 0, 0.95);
+   text-align: center;
+}
+
+.searchPage .zearch {
+   font-size: 4rem;
+}
+
+.searchPage__options {
+   margin-top: 25px;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   color: grey;
+}
+
+.searchPage__optionsLeft, .searchPage__optionsRight {
+   display: flex;
+}
+
+.searchPage__optionsRight {
+   margin-left: 80px;
+}
+
+.searchPage__option{
+   display: flex;
+   gap: 0.4rem;
+   align-items: center;
+   margin-right: 20px;
+}
+
+.searchPage__result {
+   margin: 20px 0;
+}
+
+.searchPage__resultCount {
+   color: #707575;
+   font-size: 14px;
+}
+
+.searchPage__results {
+   max-width: 650px;
+   margin-top: 20px;
+   /* margin-left: 240px; */
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 100px;
+}
+
+.searchPage__resultImage {
+   object-fit: contain;
+   height: 20px;
+   width: 20px;
+   margin-right: 10px;
+}
+
+.searchPage__resultTitle {
+text-decoration: none;
+}
+
+.searchPage__resultTitle:hover {
+   text-decoration: underline;
+}
+
+.searchPage__resultTitle > h2 {
+   font-weight: 500;
+   text-align: left;
+}
+
+.searchPage__resultSnippet {
+   margin-top: 5px;
+}
+
+@media screen and (max-width : 750px) {
+   .searchPage__options {
+      flex-direction: column;
+      gap: 0.8rem;
+   }
+
+   .searchPage__option {
+      gap: 0.4rem;
+      margin-right: 15px;
+   }
+   .searchPage__optionsRight {
+      margin-left: -20px;
+   }
+
+   .searchPage__results {
+      max-width: 550px; 
+   }
+}
+
+@media screen and (max-width: 620px){
+   .searchPage__results {
+      max-width: 500px; 
+   }
+}
+
+@media screen and (max-width: 580px){
+   .searchPage__results {
+      max-width: 400px; 
+   }
+}
+
+@media screen and (max-width : 500px) {
+   .icons {
+      display: none;
+   }
+   .searchPage__results {
+      max-width: 350px; 
+   }
+}
+
+@media screen and (max-width : 380px) {
+   .searchPage__results {
+      max-width: 330px; 
+   }
+}
